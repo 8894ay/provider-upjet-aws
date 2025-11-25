@@ -12,7 +12,7 @@ import (
 	"github.com/crossplane/crossplane-runtime/v2/pkg/errors"
 	"github.com/crossplane/upjet/v2/pkg/config"
 
-	"github.com/upbound/provider-aws/config/cluster/common"
+	"github.com/upbound/provider-aws/v2/config/cluster/common"
 )
 
 // TerraformPluginFrameworkExternalNameConfigs contains all external
@@ -2040,7 +2040,7 @@ var TerraformPluginSDKExternalNameConfigs = map[string]config.ExternalName{
 	// RDS DB Proxy Targets can be imported using the db_proxy_name, target_group_name, target type (e.g., RDS_INSTANCE or TRACKED_CLUSTER), and resource identifier separated by forward slashes (/)
 	"aws_db_proxy_target": config.IdentifierFromProvider,
 	// NOTE(turkenf): The resource aws_db_security_group is deprecated,
-	// Please see: https://github.com/upbound/provider-aws/issues/696
+	// Please see: https://github.com/upbound/provider-aws/v2/issues/696
 	// aws_db_snapshot can be imported by using the snapshot identifier
 	"aws_db_snapshot": config.ParameterAsIdentifier("db_snapshot_identifier"),
 	// aws_db_snapshot_copy can be imported by using the snapshot identifier
